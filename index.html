@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sam Ling | Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+    <script
+      src="renderers/work-experiences.js"
+      type="application/javascript"
+    ></script>
+    <script src="renderers/projects.js" type="application/javascript"></script>
+    <script
+      src="renderers/educations.js"
+      type="application/javascript"
+    ></script>
+    <script
+      src="renderers/activities.js"
+      type="application/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <section class="business-card">
+      <div class="intro">
+        <span class="name">Sam Ling</span>
+        <span class="subfont">Software Engineer, Full-stack</span>
+      </div>
+
+      <div class="contact">
+        <span class="subfont">Seattle, Washington</span>
+        <span class="phone-email">
+          <a class="subfont" href="mailto:sam@thling.com">sam@thling.com</a> |
+          <a class="subfont" href="tel:+12066599775">+1 (206) 659 9775</a>
+        </span>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="skills">
+      <h1>Highlights</h1>
+      <ul class="details">
+        <li class="detail">
+          Experienced with HTML, JavaScript/Node.js, React, TypeScript, CSS
+        </li>
+        <li class="detail">
+          Proficient with Java, Kotlin, SQL/NoSQL, Bash; knowledge of C/C++
+        </li>
+        <li class="detail">
+          Advises system designs and lead engineer for full-stack projects
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="work-experience">
+      <h1>Work Experience</h1>
+
+      <div id="work-experiences-contents" class="rendered-section"></div>
+      <script>
+        renderWorkExperiences("work-experiences-contents");
+      </script>
+    </section>
+
+    <hr class="printHide" />
+    <div class="printBreak"></div>
+
+    <section id="projects">
+      <h1>Projects</h1>
+
+      <div id="projects-contents" class="rendered-section"></div>
+      <script>
+        renderProjects("projects-contents");
+      </script>
+    </section>
+
+    <hr />
+
+    <section id="education">
+      <h1>Educations</h1>
+
+      <div id="educations-contents" class="rendered-section"></div>
+      <script>
+        renderEducations("educations-contents");
+      </script>
+    </section>
+
+    <hr />
+
+    <section class="activities">
+      <h1>Activities and Interests</h1>
+
+      <div id="activities-contents" class="rendered-section"></div>
+      <script>
+        renderActivities("activities-contents");
+      </script>
+    </section>
+  </body>
+</html>

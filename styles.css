@@ -1,0 +1,129 @@
+* {
+  color: rgb(10, 10, 10);
+}
+
+body {
+  font: 15px/1.5 "Roboto Slab";
+  margin: 20px auto;
+  max-width: 21.59cm;
+  min-width: 21.59cm;
+}
+
+section {
+  margin: 10px;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  margin: 20px 0;
+  background-color: darkgray;
+  box-shadow: lightgray 0px 0px 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 35px;
+}
+
+h1 {
+  color: rgb(100, 100, 100);
+  font: small-caps normal 26px Georgia, "Roboto Slab", serif;
+  margin-bottom: 0.15em;
+}
+/**
+ * Generic styles
+ */
+.subfont {
+  font-size: 13.5px;
+  letter-spacing: 0.5px;
+}
+
+/**
+ * Headline
+ */
+
+.business-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.business-card .intro,
+.business-card .contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.business-card .intro {
+  align-items: flex-start;
+}
+
+.business-card .intro .name {
+  font-size: 32px;
+}
+
+.business-card .contact {
+  align-items: flex-end;
+}
+
+/**
+ * Skills
+ */
+.skills .details {
+  margin-left: 10px;
+}
+
+/**
+ * Rendered sections
+ */
+
+.rendered-section {
+  margin-left: 10px;
+}
+
+.section-item {
+  margin: 13px 0;
+}
+
+.section-item .item-heading .title {
+  font: normal 17px "Roboto Slab", serif;
+  display: inline;
+}
+
+.section-item .item-heading .title .subtitle {
+  font-size: 15px;
+}
+
+.section-item .item-heading .annotate {
+  color: rgb(40, 40, 40);
+  margin-top: 0.15rem;
+}
+
+.section-item .details {
+  margin: 5px 0;
+  width: 80%;
+}
+
+.section-item .details .detail-item {
+  margin: 3px 0;
+}
+
+a.subtitle {
+  text-decoration: underline;
+}
+
+/* Print formatting */
+@media print {
+  .printHide {
+    display: none;
+  }
+
+  .printBreak {
+    page-break-after: always;
+  }
+}
