@@ -25,7 +25,7 @@ const workExperiences = [
     title: 'Software Engineer',
     company: 'Airbnb',
     location: 'Seattle, WA, USA',
-    date: 'Apr 2019 - May 2020',
+    date: 'Apr 2019 - Jul 2020',
     responsibilities: [
       'Designed, implemented, and maintained translation flow for localizing article contents',
       'Contributed to redesign of the frontend system of Help Center',
