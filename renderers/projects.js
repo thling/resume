@@ -22,9 +22,18 @@ function renderProjects(id) {
 
 const projects = [
   {
+    name: 'Sharist',
+    date: 'Aug 2020 - Present',
+    responsibilities: [
+      'Lead front-end engineer for a map-based React application',
+      'Incorporated Google Maps API and designed and implemented a wrapper class for drawing on a singleton map instance',
+      'Designed and implemented a small-scale design system, creating consistent rules such as colour, shading, and sizing steps'
+    ]
+  },
+  {
     name: 'MentorInTech',
     url: 'https://mentorintech.com',
-    date: 'April 2018 - May 2019',
+    date: 'Apr 2018 - May 2019',
     responsibilities: [
       'Led the front-end team in developing large-scale React web application',
       'Designed and implemented complex and reusable components',
@@ -49,15 +58,5 @@ const projects = [
       'Contributed to front-end designs and prototypes',
       'Coordinated developers to assist in development'
     ]
-  },
-  {
-    name: 'Human-Computer Interaction - Work Redesign Project',
-    url: 'http://bit.ly/2nqNOL8',
-    date: 'May 12 - Jul 2012',
-    responsibilities: [
-      'Practised contextual design and analysis',
-      'Redesigned interface and interactions for existing records management system',
-      "Redesigned subjects' work flow and improved work efficiencies with modern technology"
-    ]
-  },
+  }
 ]

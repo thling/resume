@@ -23,6 +23,18 @@ function renderWorkExperiences(id) {
 const workExperiences = [
   {
     title: 'Software Engineer',
+    company: 'Google',
+    location: 'Seattle, WA, USA',
+    date: 'Jul 2020 - Present',
+    responsibilities: [
+      'Lead engineer on the UI for BigQuery Migration, with contributions on the user experience and server-side data processing middleware',
+      'Launched high-profile products including batch translation and interactive translation',
+      'Cross functional partnership with UX designs and back-end teams to assist in their change requests',
+      'Worked with customer representatives to provide support for large GCP customers'
+    ]
+  },
+  {
+    title: 'Software Engineer',
     company: 'Airbnb',
     location: 'Seattle, WA, USA',
     date: 'Apr 2019 - Jul 2020',
@@ -44,27 +56,6 @@ const workExperiences = [
       "Contributed to the team's own build and deploy infrastructure",
       'Designed and implemented company-internal tools framework',
       'Designed and implemented UX A/B testing experiment with low latency impact, leading to an estimated annualised win of USD $440 million worldwide'
-    ]
-  },
-  {
-    title: 'Application Developer Co-op',
-    company: 'Sybase',
-    location: 'Waterloo, ON, Canada',
-    date: 'Aug 2012 - Dec 2012',
-    responsibilities: [
-      'Designed and implemented server automatic update workflow',
-      'Assisted with code migration during SAP merger',
-      'Fast integration of giant code base for client demo on multi-million U.S. Dollars contracts'
-    ]
-  },
-  {
-    title: 'Software Tools Developer Co-op',
-    company: 'Blackberry',
-    location: 'Waterloo, ON, Canada',
-    date: 'Sep 2011 - Apr 2012',
-    responsibilities: [
-      'Maintained Zend Framework based internal systems',
-      'Maintained and optimized efficiency for databases'
     ]
   },
 ]
