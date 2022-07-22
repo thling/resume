@@ -12,7 +12,15 @@ function renderWorkExperiences(id) {
             <div class="annotate subfont">${location} | ${date}</div>
           </div>
           <ul class="details">
-            ${responsibilities.map(res => `<li class="detail-item">${res}</li>`).join('')}
+            ${responsibilities.map(res => `<li class="detail-item">${
+              typeof res === 'string'
+                  ? res
+                  : res.map(segment =>
+                      typeof segment === 'string'
+                          ? segment
+                          : `<a class="subtitle" target="_blank" href="${segment.link}">${segment.text}</a>`
+                    ).join(' ')
+            }</li>`).join('')}
           </ul>
         </div>`.trim()
     ).join('');
@@ -22,13 +30,37 @@ function renderWorkExperiences(id) {
 
 const workExperiences = [
   {
+    title: 'Senior Software Engineer',
+    company: 'Snap, Inc.',
+    location: 'Seattle, WA, USA',
+    date: 'May 2022 - Present',
+    responsibilities: [
+      'Tech lead on the Law Enforcement Operations engineering team',
+      'Design and lead full-stack projects for managing legal process lifecycles, law enforcement data requests, and preservation and delivery of sensitive data packages',
+      'Participate in annual plannings and advocate for initiatives to improve front-end infrastructures'
+    ]
+  },
+  {
     title: 'Software Engineer',
     company: 'Google',
     location: 'Seattle, WA, USA',
-    date: 'Jul 2020 - Present',
+    date: 'Jul 2020 - May 2022',
     responsibilities: [
-      'Lead engineer on the UI for BigQuery Migration, with contributions on the user experience and server-side data processing middleware',
-      'Launched high-profile products including batch translation and interactive translation',
+      [
+        'Lead engineer on the UI for',
+        {
+          text: 'BigQuery Migration',
+          link: 'https://cloud.google.com/blog/topics/data-warehousing/announcing-bigquery-migration-service'
+        },
+        'with contributions on the user experience and server-side data processing middleware'
+      ],
+      [
+        'Launched high-profile products including',
+        {
+          text: 'batch translation and interactive translation',
+          link: 'https://cloud.google.com/blog/products/data-analytics/automated-sql-translation-to-accelerate-bigquery-migrations'
+        }
+      ],
       'Cross functional partnership with UX designs and back-end teams to assist in their change requests',
       'Worked with customer representatives to provide support for large GCP customers'
     ]

@@ -3,7 +3,7 @@
 }
 
 body {
-  font: 15px/1.5 "Roboto Slab";
+  font: 14.5px/1.45 "Roboto Slab";
   margin: 20px auto;
   max-width: 21.59cm;
   min-width: 21.59cm;
@@ -31,8 +31,8 @@ ul {
 
 h1 {
   color: rgb(100, 100, 100);
-  font: small-caps normal 26px Georgia, "Roboto Slab", serif;
-  margin-bottom: 0.15em;
+  font: small-caps normal 22px Georgia, "Roboto Slab", serif;
+  margin: 20px 0 0 0;
 }
 /**
  * Generic styles
@@ -78,6 +78,14 @@ h1 {
   margin-left: 10px;
 }
 
+.skills .details .detail {
+  margin-top: 3px;
+}
+
+.skills h1 {
+  margin-bottom: -10px;
+}
+
 /**
  * Rendered sections
  */
@@ -87,11 +95,12 @@ h1 {
 }
 
 .section-item {
-  margin: 13px 0;
+  margin: 5px 0 15px 0;
+  break-inside: avoid
 }
 
 .section-item .item-heading .title {
-  font: normal 17px "Roboto Slab", serif;
+  font: normal 16px "Roboto Slab", serif;
   display: inline;
 }
 
@@ -113,17 +122,18 @@ h1 {
   margin: 3px 0;
 }
 
-a.subtitle {
+a.subtitle, a.description {
   text-decoration: underline;
+  color: #434343;
 }
 
 /* Print formatting */
 @media print {
-  .printHide {
+  .print-hide {
     display: none;
   }
 
-  .printBreak {
-    page-break-after: always;
+  .page-break {
+    break-after: page;
   }
 }
