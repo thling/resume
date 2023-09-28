@@ -30,12 +30,23 @@ function renderWorkExperiences(id) {
 
 const workExperiences = [
   {
+    title: 'Engineering Manager',
+    company: 'Snap, Inc.',
+    location: 'Seattle, WA, USA',
+    date: 'Apr 2023 - Present',
+    responsibilities: [
+      'Support and grow a high-performing, 8-people team of engineers across two disciplines',
+      'Mentor and provide technical guidance on highly-complex and sensitive systems for data compliance',
+      'Drive cross-organizational compliance projects and spearhead discussions on high-impact intiatives that improve efficiency and quality'
+    ]
+  },
+  {
     title: 'Senior Software Engineer',
     company: 'Snap, Inc.',
     location: 'Seattle, WA, USA',
-    date: 'May 2022 - Present',
+    date: 'May 2022 - Apr 2023',
     responsibilities: [
-      'Tech lead on the Law Enforcement Operations engineering team',
+      'Tech lead on the LEO & DMD Engineering team',
       'Design and lead full-stack projects for managing legal process lifecycles, law enforcement data requests, and preservation and delivery of sensitive data packages',
       'Participate in annual plannings and advocate for initiatives to improve front-end infrastructures'
     ]

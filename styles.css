@@ -76,6 +76,7 @@ h1 {
  */
 .skills .details {
   margin-left: 10px;
+  width: 85%;
 }
 
 .skills .details .detail {
@@ -95,7 +96,7 @@ h1 {
 }
 
 .section-item {
-  margin: 5px 0 15px 0;
+  margin: 15px 0 25px 0;
   break-inside: avoid
 }
 
@@ -115,7 +116,7 @@ h1 {
 
 .section-item .details {
   margin: 5px 0;
-  width: 80%;
+  width: 85%;
 }
 
 .section-item .details .detail-item {

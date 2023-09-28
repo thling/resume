@@ -23,7 +23,7 @@ function renderProjects(id) {
 const projects = [
   {
     name: 'Sharist',
-    date: 'Aug 2020 - Present',
+    date: 'Aug 2020 - May 2021',
     responsibilities: [
       'Lead front-end engineer for a map-based React application',
       'Incorporated Google Maps API and designed and implemented a wrapper class for drawing on a singleton map instance',
