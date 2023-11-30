@@ -4,52 +4,51 @@ function renderWorkExperiences(id) {
   const container = document.querySelector(`#${id}`);
 
   const workExperiencesHtml = workExperiences
-    .map(
-      ({ title, company, location, date, responsibilities }) => `
+    .map(({ title, company, location, date, responsibilities }) =>
+      `
         <div class="section-item">
           <div class="item-heading">
             <div class="title">${title} | <span class="subtitle">${company}</span></div>
             <div class="annotate subfont">${location} | ${date}</div>
           </div>
           <ul class="details">
-            ${responsibilities.map(res => `<li class="detail-item">${
-              typeof res === 'string'
-                  ? res
-                  : res.map(segment =>
-                      typeof segment === 'string'
-                          ? segment
-                          : `<a class="subtitle" target="_blank" href="${segment.link}">${segment.text}</a>`
-                    ).join(' ')
-            }</li>`).join('')}
+            ${responsibilities
+              .map(
+                (res) =>
+                  `<li class="detail-item">${
+                    typeof res === 'string'
+                      ? res
+                      : res
+                          .map((segment) =>
+                            typeof segment === 'string'
+                              ? segment
+                              : `<a class="subtitle" target="_blank" href="${segment.link}">${segment.text}</a>`
+                          )
+                          .join(' ')
+                  }</li>`
+              )
+              .join('')}
           </ul>
         </div>`.trim()
-    ).join('');
+    )
+    .join('');
 
   container.innerHTML = workExperiencesHtml;
 }
 
 const workExperiences = [
   {
-    title: 'Engineering Manager',
+    title: 'Engineering Manager / Tech Lead',
     company: 'Snap, Inc.',
     location: 'Seattle, WA, USA',
-    date: 'Apr 2023 - Present',
+    date: 'May 2022 - Present',
     responsibilities: [
-      'Support and grow a high-performing, 8-people team of engineers across two disciplines',
-      'Mentor and provide technical guidance on highly-complex and sensitive systems for data compliance',
-      'Drive cross-organizational compliance projects and spearhead discussions on high-impact intiatives that improve efficiency and quality'
-    ]
-  },
-  {
-    title: 'Senior Software Engineer',
-    company: 'Snap, Inc.',
-    location: 'Seattle, WA, USA',
-    date: 'May 2022 - Apr 2023',
-    responsibilities: [
-      'Tech lead on the LEO & DMD Engineering team',
-      'Design and lead full-stack projects for managing legal process lifecycles, law enforcement data requests, and preservation and delivery of sensitive data packages',
-      'Participate in annual plannings and advocate for initiatives to improve front-end infrastructures'
-    ]
+      'Support and grow 8 high-performing engineers across two disciplines',
+      'Create technical roadmaps and long-term strategies with cross-functional stakeholders',
+      'Provide mentorship on building services and tooling for data and legal compliance',
+      'Lead cross-organization projects and discussions on efficiency and quality initiatives',
+      'Design systems for managing legal processes, law enforcement requests, and sensitive user data',
+    ],
   },
   {
     title: 'Software Engineer',
@@ -61,20 +60,20 @@ const workExperiences = [
         'Lead engineer on the UI for',
         {
           text: 'BigQuery Migration',
-          link: 'https://cloud.google.com/blog/topics/data-warehousing/announcing-bigquery-migration-service'
+          link: 'https://cloud.google.com/blog/topics/data-warehousing/announcing-bigquery-migration-service',
         },
-        'with contributions on the user experience and server-side data processing middleware'
+        'with contributions on the user experience and server-side data processing middleware',
       ],
       [
-        'Launched high-profile products including',
+        'Launch high-profile products including',
         {
           text: 'batch translation and interactive translation',
-          link: 'https://cloud.google.com/blog/products/data-analytics/automated-sql-translation-to-accelerate-bigquery-migrations'
-        }
+          link: 'https://cloud.google.com/blog/products/data-analytics/automated-sql-translation-to-accelerate-bigquery-migrations',
+        },
       ],
       'Cross functional partnership with UX designs and back-end teams to assist in their change requests',
-      'Worked with customer representatives to provide support for large GCP customers'
-    ]
+      'Work with customer representatives to provide support for large GCP customers',
+    ],
   },
   {
     title: 'Software Engineer',
@@ -82,11 +81,11 @@ const workExperiences = [
     location: 'Seattle, WA, USA',
     date: 'Apr 2019 - Jul 2020',
     responsibilities: [
-      'Designed, implemented, and maintained translation flow for localizing article contents',
-      'Contributed to redesign of the frontend system of Help Center',
-      'Contributed to urgent projects in response to COVID-19 such as search optimization and cancellable trip highlights',
-      'Pioneered and led operational initiatives such as documentation improvement and TypeScript migration'
-    ]
+      'Design, implement, and maintain translation flow for localizing article contents',
+      'Contribute to redesign of the frontend system of Help Center',
+      'Contribute to urgent projects in response to COVID-19 such as search optimization and cancellable trip highlights',
+      'Pioneer and lead operational initiatives such as documentation improvement and TypeScript migration',
+    ],
   },
   {
     title: 'Software Development Engineer',
@@ -95,10 +94,10 @@ const workExperiences = [
     date: 'Feb 2016 - Mar 2019',
     responsibilities: [
       "Organizational impact working on UX library used by 97% of Amazon's e-Commerce teams",
-      "Designed and implemented the team's unique release process",
-      "Contributed to the team's own build and deploy infrastructure",
-      'Designed and implemented company-internal tools framework',
-      'Designed and implemented UX A/B testing experiment with low latency impact, leading to an estimated annualised win of USD $440 million worldwide'
-    ]
+      "Design and implement the team's unique release process",
+      "Contribute to the team's own build and deploy infrastructure",
+      'Design and implement company-internal tools framework',
+      'Design and implement UX A/B testing experiment with low latency impact, leading to an estimated annualised win of USD $440 million worldwide',
+    ],
   },
-]
+];
