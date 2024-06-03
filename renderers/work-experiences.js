@@ -38,15 +38,15 @@ function renderWorkExperiences(id) {
 
 const workExperiences = [
   {
-    title: 'Engineering Manager / Tech Lead',
+    title: 'Engineering Manager',
     company: 'Snap, Inc.',
     location: 'Seattle, WA, USA',
     date: 'May 2022 - Present',
     responsibilities: [
-      'Support and grow 8 high-performing engineers across two disciplines',
+      'Support and grow 9 high-performing engineers across two disciplines',
       'Create technical roadmaps and long-term strategies with cross-functional stakeholders',
-      'Provide mentorship on building services and tooling for data and legal compliance',
-      'Lead cross-organization projects and discussions on efficiency and quality initiatives',
+      'Mentor engineers on building services and tooling for data and legal compliance',
+      'Lead cross-organizational projects and efficiency and quality initiatives',
       'Design systems for managing legal processes, law enforcement requests, and sensitive user data',
     ],
   },
