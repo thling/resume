@@ -4,12 +4,12 @@ function renderWorkExperiences(id) {
   const container = document.querySelector(`#${id}`);
 
   const workExperiencesHtml = workExperiences
-    .map(({ title, company, location, date, responsibilities }) =>
+    .map(({ title, company, team, location, date, responsibilities }) =>
       `
         <div class="section-item">
           <div class="item-heading">
-            <div class="title">${title} | <span class="subtitle">${company}</span></div>
-            <div class="annotate subfont">${location} | ${date}</div>
+            <div class="title">${title}, ${team}</div>
+            <div class="annotate subfont">${company} | ${location} | ${date}</div>
           </div>
           <ul class="details">
             ${responsibilities
@@ -39,21 +39,23 @@ function renderWorkExperiences(id) {
 const workExperiences = [
   {
     title: 'Engineering Manager',
-    company: 'Snap, Inc.',
-    location: 'Seattle, WA, USA',
+    team: 'Safety Engineering',
+    company: 'Snap',
+    location: 'Seattle, WA',
     date: 'May 2022 - Present',
     responsibilities: [
-      'Support and grow 9 high-performing engineers across two disciplines',
+      'Support and grow high-performing engineers across two domains',
       'Create technical roadmaps and long-term strategies with cross-functional stakeholders',
-      'Mentor engineers on building services and tooling for data and legal compliance',
+      'Mentor engineers on building services and tooling for complex legal data production',
       'Lead cross-organizational projects and efficiency and quality initiatives',
       'Design systems for managing legal processes, law enforcement requests, and sensitive user data',
     ],
   },
   {
     title: 'Software Engineer',
+    team: 'BigQuery UI',
     company: 'Google',
-    location: 'Seattle, WA, USA',
+    location: 'Seattle, WA',
     date: 'Jul 2020 - May 2022',
     responsibilities: [
       [
@@ -77,8 +79,9 @@ const workExperiences = [
   },
   {
     title: 'Software Engineer',
+    team: 'Support Products',
     company: 'Airbnb',
-    location: 'Seattle, WA, USA',
+    location: 'Seattle, WA',
     date: 'Apr 2019 - Jul 2020',
     responsibilities: [
       'Design, implement, and maintain translation flow for localizing article contents',
@@ -89,15 +92,15 @@ const workExperiences = [
   },
   {
     title: 'Software Development Engineer',
-    company: 'Amazon.com',
-    location: 'Seattle, WA, USA',
+    team: 'Amazon UI',
+    company: 'Amazon',
+    location: 'Seattle, WA',
     date: 'Feb 2016 - Mar 2019',
     responsibilities: [
-      "Organizational impact working on UX library used by 97% of Amazon's e-Commerce teams",
-      "Design and implement the team's unique release process",
-      "Contribute to the team's own build and deploy infrastructure",
-      'Design and implement company-internal tools framework',
-      'Design and implement UX A/B testing experiment with low latency impact, leading to an estimated annualised win of USD $440 million worldwide',
+      "Work on design system used by Amazon's e-commerce organization",
+      "Design a unique release process for UI asset version control",
+      "Contributed to the team's backend build and deploy infrastructure for asset delivery",
+      'Design and implement UX A/B testing experiment with low latency impact, leading to an estimated annualized win of USD $440 million worldwide',
     ],
   },
 ];

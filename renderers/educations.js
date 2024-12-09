@@ -8,8 +8,8 @@ function renderEducations(id) {
       `
         <div class="section-item">
           <div class="item-heading">
-            <div class="title">${degree} | <span class="subtitle">${school}</span></div>
-            <div class="annotate subfont">${location} | ${date}</div>
+            <div class="title">${degree}</div>
+            <div class="annotate subfont">${school} | ${location} | ${date}</div>
           </div>
         </div>`.trim()
     )
