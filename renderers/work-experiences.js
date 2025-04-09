@@ -44,7 +44,7 @@ const workExperiences = [
     location: 'Seattle, WA',
     date: 'May 2022 - Present',
     responsibilities: [
-      'Support and grow high-performing engineers across two domains',
+      'Support and grow high-performing engineers across three domains',
       'Create technical roadmaps and long-term strategies with cross-functional stakeholders',
       'Mentor engineers on building services and tooling for complex legal data production',
       'Lead cross-organizational projects and efficiency and quality initiatives',
