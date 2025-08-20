@@ -39,16 +39,16 @@ function renderWorkExperiences(id) {
 const workExperiences = [
   {
     title: 'Engineering Manager',
-    team: 'Safety Engineering',
+    team: 'Platform Integrity Engineering',
     company: 'Snap',
     location: 'Seattle, WA',
     date: 'May 2022 - Present',
     responsibilities: [
-      'Support and grow high-performing engineers across three domains',
-      'Create technical roadmaps and long-term strategies with cross-functional stakeholders',
-      'Mentor engineers on building services and tooling for complex legal data production',
-      'Lead cross-organizational projects and efficiency and quality initiatives',
-      'Design systems for managing legal processes, law enforcement requests, and sensitive user data',
+      'Support and mentor 9 high-performing full-stack and backend engineers across three domains',
+      'Devise long-term strategies and preemptively resolve risks of multimillion-dollar penalties',
+      'Enhance quality and user experience through cross-organizational initiatives',
+      'Increased legal compliance coverage by ~20% through reliability and observability investments',
+      'Launched complex toolings from 0-1 to support efficient investigation and escalations',
     ],
   },
   {

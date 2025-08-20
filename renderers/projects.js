@@ -45,23 +45,4 @@ const projects = [
       'Assist back-end team in infrastructure and database systems designs',
     ],
   },
-  {
-    name: 'User Input Genuity Experiment',
-    url: 'http://bit.ly/2DSmkIL',
-    date: 'Nov 2015 - Dec 2015',
-    responsibilities: [
-      'Design and implement back-end system using Node.js and MongoDB',
-      'Design and implement front-end user experience, including user tracking (<a href="http://bit.ly/2nwwinY" target="_blank">http://bit.ly/2nwwinY</a>)',
-    ],
-  },
-  {
-    name: 'Applyte',
-    date: 'Jun 2015 - Jun 2016',
-    responsibilities: [
-      'Design and implement the back-end system using Node.js and RethinkDB',
-      'Design and implement security flow for an API-centric web application',
-      'Contribute to front-end designs and prototypes',
-      'Coordinate developers to assist in development',
-    ],
-  },
 ];
