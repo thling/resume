@@ -44,11 +44,10 @@ const workExperiences = [
     location: 'Seattle, WA',
     date: 'May 2022 - Present',
     responsibilities: [
-      'Support and mentor 9 high-performing full-stack and backend engineers across three domains',
-      'Devise long-term strategies and preemptively resolve risks of multimillion-dollar penalties',
-      'Enhance quality and user experience through cross-organizational initiatives',
-      'Increased legal compliance coverage by ~20% through reliability and observability investments',
-      'Launched complex toolings from 0-1 to support efficient investigation and escalations',
+      'Support and grow high-performing frontend and backend engineering teams',
+      'Create technical roadmaps and long-term strategies with cross-functional stakeholders ',
+      'Build LLM-assisted UI tooling and petabyte-scale distributed systems for processing complex user contents and internal data',
+      'Lead organizational projects on efficiency and quality initiatives ',
     ],
   },
   {
@@ -59,12 +58,12 @@ const workExperiences = [
     date: 'Jul 2020 - May 2022',
     responsibilities: [
       [
-        'Lead engineer on the UI for',
+        'Tech lead on',
         {
           text: 'BigQuery Migration',
           link: 'https://cloud.google.com/blog/topics/data-warehousing/announcing-bigquery-migration-service',
         },
-        'with contributions on the user experience and server-side data processing middleware',
+        'leading engineers on customer-facing systems and server-side data processing middleware',
       ],
       [
         'Launch high-profile products including',
@@ -98,7 +97,7 @@ const workExperiences = [
     date: 'Feb 2016 - Mar 2019',
     responsibilities: [
       "Work on design system used by Amazon's e-commerce organization",
-      "Design a unique release process for UI asset version control",
+      'Design a unique release process for UI asset version control',
       "Contributed to the team's backend build and deploy infrastructure for asset delivery",
       'Design and implement UX A/B testing experiment with low latency impact, leading to an estimated annualized win of USD $440 million worldwide',
     ],
