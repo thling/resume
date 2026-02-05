@@ -45,9 +45,10 @@ const workExperiences = [
     date: 'May 2022 - Present',
     responsibilities: [
       'Support and grow high-performing frontend and backend engineering teams',
-      'Create technical roadmaps and long-term strategies with cross-functional stakeholders ',
-      'Build LLM-assisted UI tooling and petabyte-scale distributed systems for processing complex user contents and internal data',
-      'Lead organizational projects on efficiency and quality initiatives ',
+      'Create technical roadmaps and long-term strategies serving cross-functional stakeholders',
+      'Pilot LLM-based agentic tooling for ops teams, automating complex workflows while saving USD ~$1M in vendor contracts annually',
+      'Build petabyte-scale distributed systems for processing user data and internal data',
+      'Lead organizational efforts on efficiency and quality initiatives',
     ],
   },
   {
@@ -99,7 +100,7 @@ const workExperiences = [
       "Work on design system used by Amazon's e-commerce organization",
       'Design a unique release process for UI asset version control',
       "Contributed to the team's backend build and deploy infrastructure for asset delivery",
-      'Design and implement UX A/B testing experiment with low latency impact, leading to an estimated annualized win of USD $440 million worldwide',
+      'Design and implement UX A/B testing experiment with low latency impact, leading to an estimated annualized win of USD $440M worldwide',
     ],
   },
 ];
