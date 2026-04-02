@@ -16,7 +16,7 @@ section {
 hr {
   height: 1px;
   border: none;
-  margin: 20px 0;
+  margin: 16px 0;
   background-color: darkgray;
   box-shadow: lightgray 0px 0px 1px;
 }
@@ -32,7 +32,7 @@ ul {
 h1 {
   color: rgb(100, 100, 100);
   font: small-caps normal 22px Georgia, "Roboto Slab", serif;
-  margin: 15px 0 0 0;
+  margin: 12px 0 0 0;
 }
 /**
  * Generic styles
@@ -64,7 +64,7 @@ h1 {
 }
 
 .business-card .intro .name {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .business-card .contact {
@@ -92,11 +92,11 @@ h1 {
  */
 
 .rendered-section {
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 .section-item {
-  margin: 15px 0 20px 0;
+  margin: 8px 0 16px 0;
   break-inside: avoid
 }
 
@@ -111,12 +111,12 @@ h1 {
 
 .section-item .item-heading .annotate {
   color: rgb(40, 40, 40);
-  margin-top: 0.15rem;
+  margin-top: 0.05rem;
 }
 
 .section-item .details {
   margin: 5px 0;
-  width: 100%;
+  width: 95%;
 }
 
 .section-item .details .detail-item {

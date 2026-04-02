@@ -58,23 +58,22 @@ const workExperiences = [
     location: "Seattle, WA",
     date: "Jul 2020 - May 2022",
     responsibilities: [
+      "Supported and mentored an engineering pod as a tech lead on the BigQuery UI team",
       [
-        "Tech lead on BigQuery UI, building",
+        "Led 0-to-1 development of the",
         {
           text: "BigQuery Migration",
           link: "https://cloud.google.com/blog/topics/data-warehousing/announcing-bigquery-migration-service"
         },
-        "serving thousands of prospective customers"
-      ],
-      [
-        "Launch high-profile products including",
+        "front-end, including",
         {
-          text: "automated and interactive translation",
+          text: "automated SQL translation,",
           link: "https://cloud.google.com/blog/products/data-analytics/automated-sql-translation-to-accelerate-bigquery-migrations"
-        }
+        },
+        "enabling thousands of enterprise customers to migrate from on-prem data warehouses"
       ],
-      "Cross-functional partnership with UX, backend, PM, and ops in building end-to-end product strategy",
-      "Work with customer representatives to provide technical support for GCP customers"
+      "Partnered with cross-functional stakeholders from UX, backend, PM, and ops in building end-to-end strategies",
+      "Worked with customer representatives to provide technical support for GCP customers"
     ]
   },
   {
@@ -84,9 +83,9 @@ const workExperiences = [
     location: "Seattle, WA",
     date: "Apr 2019 - Jul 2020",
     responsibilities: [
-      "Design, implement, and maintain translation flow for localizing article contents",
-      "Pioneer and lead engineering excellence & quality initiatives, including TypeScript migration and Help Center redesign",
-      "Drive urgent initiatives in response to COVID-19 emergency, including help article optimization and trip cancellation workflow updates"
+      "Designed & implemented translation flow for localizing article contents",
+      "Led engineering excellence & quality initiatives, including TypeScript migration and Help Center redesign",
+      "Drove urgent initiatives in response to COVID-19 emergency, including help article optimization and trip cancellation workflow updates"
     ]
   },
   {
@@ -96,10 +95,10 @@ const workExperiences = [
     location: "Seattle, WA",
     date: "Feb 2016 - Mar 2019",
     responsibilities: [
-      "Build the design system used by 97% of Amazon's e-commerce organization",
-      "Launch font loading experiments with zero latency impact, leading to USD $440M+ annualized win",
-      "Design an event-based release process to manage complex component dependencies",
-      "Contribute to build and deploy infrastructure for delivering UI assets to hundreds of teams"
+      "Built the design system used by 97% of Amazon's e-commerce organization",
+      "Launched font loading experiments with zero latency impact, leading to USD $440M+ annualized win",
+      "Designed an event-based release process to manage complex component dependencies",
+      "Contributed to build and deploy infrastructure for delivering UI assets to hundreds of teams"
     ]
   }
 ];
