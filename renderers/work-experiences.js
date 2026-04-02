@@ -16,91 +16,90 @@ function renderWorkExperiences(id) {
               .map(
                 (res) =>
                   `<li class="detail-item">${
-                    typeof res === 'string'
+                    typeof res === "string"
                       ? res
                       : res
                           .map((segment) =>
-                            typeof segment === 'string'
+                            typeof segment === "string"
                               ? segment
                               : `<a class="subtitle" target="_blank" href="${segment.link}">${segment.text}</a>`
                           )
-                          .join(' ')
+                          .join(" ")
                   }</li>`
               )
-              .join('')}
+              .join("")}
           </ul>
         </div>`.trim()
     )
-    .join('');
+    .join("");
 
   container.innerHTML = workExperiencesHtml;
 }
 
 const workExperiences = [
   {
-    title: 'Engineering Manager',
-    team: 'Platform Integrity Engineering',
-    company: 'Snap',
-    location: 'Seattle, WA',
-    date: 'May 2022 - Present',
+    title: "Engineering Manager",
+    team: "Platform Integrity Engineering",
+    company: "Snap",
+    location: "Seattle, WA",
+    date: "May 2022 - Present",
     responsibilities: [
-      'Support and grow high-performing frontend and backend engineering teams',
-      'Create technical roadmaps and long-term strategies serving cross-functional stakeholders',
-      'Pilot LLM-based agentic tooling for ops teams, automating complex workflows while saving USD ~$1M in vendor contracts annually',
-      'Build petabyte-scale distributed systems for processing user data and internal data',
-      'Lead organizational efforts on efficiency and quality initiatives',
-    ],
+      "Support and grow high-performing engineers in building high-stakes safety and compliance systems",
+      "Pilot agentic tooling and automate complex workflows, saving USD $1M+/year in vendor contracts",
+      "Build petabyte-scale distributed systems for processing user data and internal data",
+      "Create technical roadmaps and multi-year strategies serving cross-functional stakeholders",
+      "Lead organizational initiatives to implement robust engineering culture"
+    ]
   },
   {
-    title: 'Software Engineer',
-    team: 'BigQuery UI',
-    company: 'Google',
-    location: 'Seattle, WA',
-    date: 'Jul 2020 - May 2022',
+    title: "Software Engineer",
+    team: "BigQuery UI",
+    company: "Google",
+    location: "Seattle, WA",
+    date: "Jul 2020 - May 2022",
     responsibilities: [
       [
-        'Tech lead on',
+        "Tech lead on BigQuery UI, building",
         {
-          text: 'BigQuery Migration',
-          link: 'https://cloud.google.com/blog/topics/data-warehousing/announcing-bigquery-migration-service',
+          text: "BigQuery Migration",
+          link: "https://cloud.google.com/blog/topics/data-warehousing/announcing-bigquery-migration-service"
         },
-        'leading engineers on customer-facing systems and server-side data processing middleware',
+        "serving thousands of prospective customers"
       ],
       [
-        'Launch high-profile products including',
+        "Launch high-profile products including",
         {
-          text: 'batch translation and interactive translation',
-          link: 'https://cloud.google.com/blog/products/data-analytics/automated-sql-translation-to-accelerate-bigquery-migrations',
-        },
+          text: "automated and interactive translation",
+          link: "https://cloud.google.com/blog/products/data-analytics/automated-sql-translation-to-accelerate-bigquery-migrations"
+        }
       ],
-      'Cross functional partnership with UX designs and back-end teams to assist in their change requests',
-      'Work with customer representatives to provide support for large GCP customers',
-    ],
+      "Cross-functional partnership with UX, backend, PM, and ops in building end-to-end product strategy",
+      "Work with customer representatives to provide technical support for GCP customers"
+    ]
   },
   {
-    title: 'Software Engineer',
-    team: 'Support Products',
-    company: 'Airbnb',
-    location: 'Seattle, WA',
-    date: 'Apr 2019 - Jul 2020',
+    title: "Software Engineer",
+    team: "Support Products",
+    company: "Airbnb",
+    location: "Seattle, WA",
+    date: "Apr 2019 - Jul 2020",
     responsibilities: [
-      'Design, implement, and maintain translation flow for localizing article contents',
-      'Contribute to redesign of the frontend system of Help Center',
-      'Contribute to urgent projects in response to COVID-19 such as search optimization and cancellable trip highlights',
-      'Pioneer and lead operational initiatives such as documentation improvement and TypeScript migration',
-    ],
+      "Design, implement, and maintain translation flow for localizing article contents",
+      "Pioneer and lead engineering excellence & quality initiatives, including TypeScript migration and Help Center redesign",
+      "Drive urgent initiatives in response to COVID-19 emergency, including help article optimization and trip cancellation workflow updates"
+    ]
   },
   {
-    title: 'Software Development Engineer',
-    team: 'Amazon UI',
-    company: 'Amazon',
-    location: 'Seattle, WA',
-    date: 'Feb 2016 - Mar 2019',
+    title: "Software Development Engineer",
+    team: "Amazon UI",
+    company: "Amazon",
+    location: "Seattle, WA",
+    date: "Feb 2016 - Mar 2019",
     responsibilities: [
-      "Work on design system used by Amazon's e-commerce organization",
-      'Design a unique release process for UI asset version control',
-      "Contributed to the team's backend build and deploy infrastructure for asset delivery",
-      'Design and implement UX A/B testing experiment with low latency impact, leading to an estimated annualized win of USD $440M worldwide',
-    ],
-  },
+      "Build the design system used by 97% of Amazon's e-commerce organization",
+      "Launch font loading experiments with zero latency impact, leading to USD $440M+ annualized win",
+      "Design an event-based release process to manage complex component dependencies",
+      "Contribute to build and deploy infrastructure for delivering UI assets to hundreds of teams"
+    ]
+  }
 ];

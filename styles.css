@@ -4,7 +4,7 @@
 
 body {
   font: 14px/1.4 "Roboto Slab";
-  margin: 20px auto;
+  margin: 0px auto;
   max-width: 21.59cm;
   min-width: 21.59cm;
 }
@@ -32,7 +32,7 @@ ul {
 h1 {
   color: rgb(100, 100, 100);
   font: small-caps normal 22px Georgia, "Roboto Slab", serif;
-  margin: 20px 0 0 0;
+  margin: 15px 0 0 0;
 }
 /**
  * Generic styles
@@ -75,7 +75,7 @@ h1 {
  * Skills
  */
 .skills .details {
-  margin-left: 10px;
+  margin-left: 5px;
   width: 85%;
 }
 
@@ -92,11 +92,11 @@ h1 {
  */
 
 .rendered-section {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .section-item {
-  margin: 15px 0 25px 0;
+  margin: 15px 0 20px 0;
   break-inside: avoid
 }
 
@@ -116,7 +116,7 @@ h1 {
 
 .section-item .details {
   margin: 5px 0;
-  width: 85%;
+  width: 100%;
 }
 
 .section-item .details .detail-item {
